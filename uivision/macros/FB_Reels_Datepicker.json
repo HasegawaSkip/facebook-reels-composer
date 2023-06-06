@@ -1,0 +1,84 @@
+{
+  "Name": "FB_Reels_Datepicker",
+  "CreationDate": "2023-6-6",
+  "Commands": [
+    {
+      "Command": "selectWindow",
+      "Target": "TAB=CLOSEALLOTHER",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[2]/div/div/input",
+      "Value": "",
+      "Description": "Date input"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_CTRL+KEY_A}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${!COL3}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[2]/div[1]/div/label",
+      "Value": "",
+      "Description": "Hours"
+    },
+    {
+      "Command": "XType",
+      "Target": "${!COL4}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[2]/div[2]/div/label",
+      "Value": "",
+      "Description": "Minutes"
+    },
+    {
+      "Command": "XType",
+      "Target": "${!COL5}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[2]/div[3]/div/label",
+      "Value": "",
+      "Description": "AM/PM"
+    },
+    {
+      "Command": "XType",
+      "Target": "${!COL6}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[2]/div[2]/div[3]/span/div/div/div",
+      "Value": "",
+      "Description": "Save as draft tab"
+    },
+    {
+      "Command": "pause",
+      "Target": "500",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[2]/div[2]/div/div/span/div/div/div",
+      "Value": "",
+      "Description": "Schedule/Save button"
+    }
+  ]
+}

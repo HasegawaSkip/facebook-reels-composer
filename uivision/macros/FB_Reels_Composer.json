@@ -1,0 +1,108 @@
+{
+  "Name": "f",
+  "CreationDate": "2023-6-6",
+  "Commands": [
+    {
+      "Command": "echo",
+      "Target": "Clicking and Uploading video",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "selectWindow",
+      "Target": "tab=open",
+      "Value": "${!cmd_var2}",
+      "Description": "URL to Facebook Reels Composer page"
+    },
+    {
+      "Command": "XClick",
+      "Target": "xpath=//span/div/div/div[2]",
+      "Value": "",
+      "Description": "Add video button"
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${!COL1}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Writing description...",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "xpath=//div[3]/div/div[2]/div/div[2]/div/div[2]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${!COL2}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "XClick // share.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "5000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "waitForElementPresent",
+      "Target": "xpath=//div[1]/canvas",
+      "Value": "",
+      "Description": "Check for the present of Facebook reel preview video"
+    },
+    {
+      "Command": "echo",
+      "Target": "Clicking Share radio button",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[3]/div[2]/div/div",
+      "Value": "",
+      "Description": "Share radio button"
+    },
+    {
+      "Command": "echo",
+      "Target": "Clicking Schedule tab",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[2]/div[2]/div[2]/span",
+      "Value": "",
+      "Description": "Schedule tab"
+    },
+    {
+      "Command": "run",
+      "Target": "FB_Reels_Datepicker",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "Name": "sd",
+  "CreationDate": "2023-6-6",
+  "Commands": [
+    {
+      "Command": "store",
+      "Target": "${!cmd_var1}",
+      "Value": "!csvReadLineNumber",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "180",
+      "Value": "!timeout_macro",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "fast",
+      "Value": "!replayspeed",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "The file ReadCSVTestData.csv is pre-installed with UI.Vision RPA.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "csvRead",
+      "Target": "${!cmd_var3}",
+      "Value": "",
+      "Description": "Filename of the csv file"
+    },
+    {
+      "Command": "echo",
+      "Target": "status = ${!csvReadStatus}, line = !csvReadLineNumber",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "Call subroutine for the actual form filling",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${!COL1}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${!COL2}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${!COL3} ${!COL4};${!COL5} ${!COL6}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "run",
+      "Target": "FB_Reels_Composer",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "executeScript_Sandbox // return Number(${!csvReadLineNumber})+1",
+      "Value": "!csvReadLineNumber",
+      "Description": ""
+    }
+  ]
+}
